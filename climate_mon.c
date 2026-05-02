@@ -28,7 +28,7 @@ void airspeed(void *p){
     float rpm = 100;
     while(1){
         rpm += ((rand()%5)-2)*1000;
-        powergen+=rpm/100;
+        powergen+=rpm/10;
         printf("Wind_Power:%.2f\n",powergen);
         printf("RPM : %.2f\n",rpm);
         if(rpm>1000){
